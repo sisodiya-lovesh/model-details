@@ -27,9 +27,6 @@ const XModal = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validation
-    const newErrors = {};
-
     if (!email.includes('@')) {
       alert('Invalid email. Please check your email address.');
       return;
@@ -57,6 +54,7 @@ const XModal = () => {
   const handleOpenModal = () => {
     setIsOpen(true);
   };
+
   return (
     <div className="xmodal">
       <h1>User Details Modal</h1>
